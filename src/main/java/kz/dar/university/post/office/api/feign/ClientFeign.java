@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
 
-@FeignClient("client-core-api")
+@FeignClient(name = "client-core-api")
 public interface ClientFeign {
 
     @GetMapping("/client/check")

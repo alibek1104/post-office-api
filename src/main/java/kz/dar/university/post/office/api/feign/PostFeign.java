@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient("post-core-api")
+@FeignClient(name = "post-core-api")
 public interface PostFeign {
 
     @GetMapping("/post/check")
